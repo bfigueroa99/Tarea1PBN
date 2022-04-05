@@ -33,7 +33,7 @@ int numerosaleatorios(int d,int h){ //numeros aleatorios entre d y h
     return(r);
 }
 
-void colocarmurallas(char lista[12][33]){
+int colocarmurallas(char lista[12][33]){
     //primero verifico y borro las M que hay
     for (int i1=0;i1<11;i1++){
         for (int i2=0;i2<=33;i2++){
@@ -112,8 +112,6 @@ int main(int argc,  char **argv){
         printf("\n");
     }
 
-    colocarmurallas(tablero);
+    //colocarmurallas(tablero);
     imprimir(tablero);
-
-    return 0;
 }
